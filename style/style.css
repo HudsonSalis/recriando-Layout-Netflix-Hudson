@@ -1,0 +1,377 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: var(--preto);
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  
+}
+ 
+
+header .container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  
+   
+}
+
+header .logo{
+    color: orangered;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 8px;
+    font-size: 30px;
+}
+header nav{
+    width: 70%;
+    margin-left: 30px;
+    padding-right: 30px;
+ 
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    
+
+}
+header nav a:hover{
+    color:rgb(243, 143, 76);
+}
+
+
+.filme-principal{
+    font-size: 16px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.90)), url("/imagens/hxh.jpg");
+     
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 15%;
+    font-family: 'Trebuchet MS',Arial, sans-serif;
+}
+
+.filme-principal .descricao{
+    font-size: 19px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.decorativo{
+    color: rgba(228, 100, 54, 0.788);
+}
+
+.botao{
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.botao a{
+    text-decoration: none;
+    color: black;
+}
+.botao:hover{
+    background-color: white;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.assinar{
+    background-color: white;
+    color: black;
+}
+
+.maisInfo{
+    background-color: rgba(0,0,0,.50);
+}
+
+.container{
+    margin-left: 50px;
+}
+
+.filme-principal .container{
+    width: 60%;
+    overflow: hidden;
+}
+
+.owl-carousel{
+ margin-top: 12px;
+ 
+}
+
+.titulo-tipos{
+    font-size: 20px;
+    margin-top: 20px;
+   margin-left: 20px;
+}
+
+.item{
+   display: block;
+   margin-left: 20px;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+   
+}
+
+.item:hover{
+    transform: scale(1.1);
+    
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    cursor: pointer;
+    
+}
+.item figure{
+   
+    z-index: 9;
+}
+.segundoCarrosel{
+    margin-bottom: 25px;
+}
+
+.planos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(to right,rgba(16, 199, 245, 0.726),rgba(5, 89, 216, 0.952));
+    transition: 1s;
+}
+.planos:hover{
+    border: 1px solid white;
+    background: rgba(10, 10, 10, 0.438);
+    transform: scale(1);
+
+    
+    
+
+}
+
+.um-info{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    
+    transition: 0.3s;
+    opacity: 0.01;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.um-info:hover{
+  background-color: rgba(0,0,0,.85);
+  width: 250px;
+  height: 200px;
+  color: white;
+  position: absolute;
+  border-radius: 3%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.planoInfo{
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 1;
+  
+}
+.planoInfo:hover{
+    background-color: transparent;
+
+}
+
+.descricao-tipos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+ 
+}
+.descricao-tipos span{
+    color: tomato;
+    margin-bottom: 5px;
+    opacity: 1;
+
+}
+
+.descricao-planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.descricao-planos span{
+   
+ margin-bottom: 15px;
+ color: rgb(141, 7, 250);
+ font-size: 18px;
+}
+
+#btn-comprar{
+    color: white;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    background-color: rgba(60, 10, 240, 0.795);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#btn-comprar:hover{
+    background-color: rgba(10, 240, 29, 0.603);
+
+}
+
+.preco{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(243, 50, 17);
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0; 
+    z-index: 9;
+    border: 1px solid white;
+}
+
+.principal{
+    right: 2em;
+    bottom: 2em;
+    color: white;
+}
+
+
+.opcoes-Sueco{
+    display: none;
+    width: 65%;
+    min-height: 320px;
+    background-color: rgba(8, 8, 8, 0.774);
+    border: 3px solid black;
+    color: black;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: -250px;
+    border-radius: 1%;
+    padding: 20px;
+    animation: anima 0.5s;
+    z-index: 8;
+
+}
+
+.flexOpcoes-Sueco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.sobre{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+   line-height: 20px;
+    letter-spacing: 1px;
+   
+}
+.sobre span{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.massagemSuecaInfo img{
+    float: left;
+    margin-right: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.fechar{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    z-index:  9;
+}
+
+.test{
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+}
+.test:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all{
+    display:none;
+    width: 100%;
+    height: 185%;
+    position: absolute; 
+    z-index: 7; 
+}

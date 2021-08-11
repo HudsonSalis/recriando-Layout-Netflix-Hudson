@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marcar.css">
+    <link rel="stylesheet" href="responsive.css">    
+    
+    <!-- owl css-->
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+
+
+    <section class="conteudo">
+        <section class="main">
+            <div class="titulo">
+               <h1>Agendar sessão</h1>
+            </div>
+
+            <div class="voltar">
+                <a href="index.html">MASSAGIX</a>
+            </div>
+
+            <div class="container-dois">
+
+                <div class="label-float">
+                    <input id="nome" type="text" placeholder=" " require="required" >
+                    <label>Nome</label>
+                </div>
+
+                <div class="label-float">
+                      <input type="text" id ="telefoneCelular" placeholder=" " require="required">
+                      <label>Telefone Celular</label>
+                </div>
+
+                <div class="label-float">
+                      <input id="email" type="email" placeholder=" " require="required">
+                      <label>E-mail</label>
+                </div>
+                
+                <div class="opcoesParaEscolher">
+                    <select name=" " id="massagem-escolher">
+                        <option value="">Massagem Sueca</option>
+                        <option value="">Massagem Esportiva</option>
+                        <option value="">Massagem Completa</option>
+                        <option value="">Massagem com Pedras Quentes</option>
+                        <option value="">Massagem Ponto-gatilho</option>
+                        <option value="">Massagem Shiatsu</option>
+                        <option value="">Massagem Clássica</option>
+                    </select>
+
+                    <select name=" " id="massagem-duracao">
+                        <option value="">30 Minutos</option>
+                        <option value="">45 Minutos + $10</option>
+                        <option value="">60 Minutos + $20</option>
+                        
+                    </select>
+                </div>
+
+                <button  id="btn-enviar" type="submit">ENVIAR DADOS</button>
+                <button id="baixarPDF"><p>Clique aqui para baixar o pdf</p> <img src="/imagens/printer.png" width="50" height="50"> </button>
+            </div>
+        </section>
+                
+        
+
+    </section>
+    
+</head>
+<body>
+    
+    <script src="https://kit.fontawesome.com/0de4f1a3c2.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/main.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+
+</body>
+</html>

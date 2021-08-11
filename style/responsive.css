@@ -1,0 +1,75 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        
+    }header nav{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .botao{
+        margin-top: 8px;
+        width: 300px;
+    }
+
+    .filme-principal{
+        height: 550px;
+    }
+
+    .titulo{
+        margin-top: 0;
+    }
+
+    .opcoes-Sueco{
+        margin-left: 10%;
+        width: 70%;
+    }
+    figure img{
+      float: none ;
+      overflow: hidden;
+      padding: 15px;
+    }
+
+    .main{
+        width: 550px;
+    }
+    .container-dois{
+        margin-right: 50px;
+    }
+    .voltar{
+        text-align: center;
+    }
+
+   
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 70%;
+    }
+    .titulo{
+        margin-top: 5%;
+    }
+    
+}
+
+
+
+@keyframes anima{
+    0%{
+       
+        opacity: 0.1;
+    }
+    50%{
+  
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+    
+        opacity: 1;
+    }
+}
