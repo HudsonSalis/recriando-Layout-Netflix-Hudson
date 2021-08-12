@@ -14,13 +14,22 @@ body{
   
 }
  
+.opcoes-adicionais{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    
+}
 
 header .container{
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 60px;
   
    
@@ -29,13 +38,12 @@ header .container{
 header .logo{
     color: orangered;
     font-family: 'Raleway', sans-serif;
-    margin-left: 8px;
+    margin-left: -80px;
     font-size: 30px;
 }
 header nav{
-    width: 70%;
-    margin-left: 30px;
-    padding-right: 30px;
+    width: 20%;
+   
  
 }
 

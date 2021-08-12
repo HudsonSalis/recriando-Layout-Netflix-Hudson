@@ -1,9 +1,13 @@
 @media screen and (max-width: 700px){
     header .container{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        height: 120px;
         
-    }header nav{
+    }
+    header .logo{
+        margin-left: 0px;
+    }
+    header nav{
         display: flex;
         justify-content: center;
        
